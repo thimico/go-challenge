@@ -72,7 +72,13 @@ JWT_SECRET=8d1b46e1f34a2b2c599ae78d7f53c0b98d1b46e1f34a2b2c599ae78d7f53c0b9
 
 Replace the placeholder values with your RabbitMQ connection URL, Stooq API URL, PostgreSQL connection URL, and JWT secret if needed.
 
-4. Run the application:
+4. Run the migrations to create the tables and initial data (user: admin, password: admin):
+
+```sh
+go run cmd/api/migration/main.go
+```
+
+5. Run the application:
 
 ```sh
 go run cmd/api/main.go
