@@ -7,12 +7,15 @@ require (
 	github.com/fortytw2/dockertest v0.0.0-20211014152632-a835544d90ce
 	github.com/go-pg/pg/v9 v9.2.1
 	github.com/go-playground/validator v9.31.0+incompatible
+	github.com/gorilla/websocket v1.5.0
 	github.com/labstack/echo v3.3.10+incompatible
 	github.com/lib/pq v1.10.9
 	github.com/nbutton23/zxcvbn-go v0.0.0-20210217022336-fa2cb2858354
 	github.com/rs/zerolog v1.29.1
+	github.com/streadway/amqp v1.0.0
 	github.com/stretchr/testify v1.8.2
 	golang.org/x/crypto v0.8.0
+	golang.org/x/net v0.9.0
 	gopkg.in/yaml.v2 v2.4.0
 )
 
@@ -35,7 +38,6 @@ require (
 	github.com/vmihailenco/bufpool v0.1.11 // indirect
 	github.com/vmihailenco/msgpack/v4 v4.3.12 // indirect
 	github.com/vmihailenco/tagparser v0.1.1 // indirect
-	golang.org/x/net v0.9.0 // indirect
 	golang.org/x/sys v0.7.0 // indirect
 	golang.org/x/text v0.9.0 // indirect
 	google.golang.org/appengine v1.6.6 // indirect
