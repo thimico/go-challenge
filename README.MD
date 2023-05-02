@@ -99,6 +99,7 @@ The application runs as an HTTP server at port 8080. It provides the following R
 * `POST /v1/users`: creates a new user
 * `PATCH /v1/password/:id`: changes password for a user
 * `DELETE /v1/users/:id`: deletes a user
+* `GET /v1/chat/ws`: websocket chat (unfinished)
 
 To use the chat application:
 

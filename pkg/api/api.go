@@ -84,6 +84,7 @@ func Start(cfg *config.Configuration) error {
 
 	ut.NewHTTP(ul.New(user.Initialize(db, rbac, sec), log), v1)
 	pt.NewHTTP(pl.New(password.Initialize(db, rbac, sec), log), v1)
+	//ct.NewHTTP(chat.Initialize(db, rbac, sec)), v1)
 
 	server.Start(e, &server.Config{
 		Port:                cfg.Server.Port,

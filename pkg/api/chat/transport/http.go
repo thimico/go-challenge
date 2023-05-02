@@ -18,10 +18,10 @@ func NewHTTP(svc chat.Service, r *echo.Group, mw echo.MiddlewareFunc) {
 	h := HTTP{svc}
 	ur := r.Group("/chat")
 
-	// swagger:route GET /me auth meReq
+	// swagger:route GET /ws auth meReq
 	// Gets user's info from session.
 	// responses:
-	//  200: userResp
+	//  200: chatResp
 	//  500: err
 	ur.GET("/ws", h.handleWebSocket, mw)
 
